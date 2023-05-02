@@ -1,10 +1,10 @@
 
-function add(a:number, b:number):number {
-    const sum = a + b;
-    return sum;
+function add(a:number, b:number=10):number {
+    return a + b;
+   
 }
 
-add(5, 7);
+add(7);
 
 
 const addArrow = (num1: number, num2: number): number => num1 + num2;
@@ -22,9 +22,10 @@ const person: {
 
     addBalance(money:number):void
 } = {
-    name: "Rahat",
+    name: "Rahat",  
     balance: 5,
     addBalance(money: number) {
         console.log( `My new balance is ${this.balance + money}`);;
     }
 }
+
